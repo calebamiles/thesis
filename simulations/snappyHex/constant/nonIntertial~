@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.7.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+	version     2.0;
+	format      ascii;
+	class       dictionary;
+	location    "case root";
+	object      nonInertial;
+}
+/*
+Control dictionary specifying the scalar components of vectors that describe the
+equations of motion for a non-inertial reference frame:
+	Omega: 	Angular Velocity (OpenFoam units of inverse time)
+	dOmega: 	Angular Acceleration (OpenFoam units of inverse time squared)
+	A:			Rectilinear Acceleration (OpenFoam units of meters per second squared)
+	
+The user contributed OpenFoam addition equationReader is used for automatic equation handling,
+but dimensional consistency is the **USERS** responsibility. The following variables
+must be defined:
+
+	aX:			X-Component of Rectilinear Acceleration
+	aY:			Y-Component of Rectilinear Acceleration
+	aZ:			Z-Component of Rectilinear Acceleration
+
+	omegaX:		X-Component of Angular Velocity
+	omegaY:		Y-Component of Angular Velocity
+	omegaZ:		Z-Component of Angular Velocity
+
+	dOmegaX:		X-Component of Angular Acceleration
+	dOmegaY:		Y-Component of Angular Acceleration
+	dOmegaZ:		Z-Component of Angular Acceleration
+
+Time dependent expressions are supported, the variable "t" is evaluated to the current time step
+during a simulation, please do not overwrite this variable as which version of "t" will be used 
+is non-deterministic. Information about equationReader may be obtained from:
+	http://openfoamwiki.net/index.php/Contrib_equationReader
+*/
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+/*
+//Commented Out for testing
+Beta			"pi_/2";
+f	f	[0 0 -1 0 0 0 0] 10.0;
+A	A	[0 1 -0 0 0 0 0] 3.0;
+nu nu	[0 2 -1 0 0 0 0] 0.01;
+*/
+
+StL	"1.0";
+StA	"0.16";
+
+
+/*
+aX			[0 1 -2 0 0 0 0] 0.0;
+aY			[0 1 -2 0 0 0 0] 0.0;
+aZ			[0 1 -2 0 0 0 0] 0.0;
+*/
+
+/*
+// Commented out for testing
+aX			[0 1 -2 0 0 0 0] "cos(Beta)*pow((2*pi_*f),2)*A*cos(2*pi_*f*t)";
+aY			[0 1 -2 0 0 0 0] "sin(Beta)*pow((2*pi_*f),2)*A*cos(2*pi_*f*t)";
+*/
+
+
+aX			[0 1 -2 0 0 0 0] 0.0;
+aY			[0 1 -2 0 0 0 0] "4.0*pow(pi_,2)*StA*StL*cos(2*pi_*StL*t)";
+aZ			[0 1 -2 0 0 0 0] 0.0;
+
+
+omegaX	[0 0 -1 0 0 0 0] 0.0;
+omegaY	[0 0 -1 0 0 0 0] 0.0;
+omegaZ	[0 0 -1 0 0 0 0] 0.0;
+
+dOmegaX	[0 0 -2 0 0 0 0] 0.0;
+dOmegaY	[0 0 -2 0 0 0 0] 0.0;
+dOmegaZ	[0 0 -2 0 0 0 0] 0.0;
+
+
+
+
+// ************************************************************************* //

@@ -1,0 +1,296 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8486,        287]
+NotebookOptionsPosition[      7303,        242]
+NotebookOutlinePosition[      7641,        257]
+CellTagsIndexPosition[      7598,        254]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"L", ":=", " ", 
+  FractionBox["1", "2"]}]], "Input",
+ CellChangeTimes->{{3.539242453076423*^9, 3.539242459464259*^9}}],
+
+Cell[BoxData[
+ RowBox[{"h", " ", ":=", " ", 
+  FractionBox["1", "16"]}]], "Input",
+ CellChangeTimes->{{3.539242523575708*^9, 3.539242529306621*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox["h", "a"], "\[Equal]", 
+      RowBox[{"Cot", "[", 
+       FractionBox[
+        FractionBox["h", "a"], 
+        FractionBox[
+         RowBox[{"2", "m"}], "a"]], "]"}]}], ",", 
+     RowBox[{
+      FractionBox["L", "a"], "\[Equal]", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"1", "+", 
+        FractionBox[
+         RowBox[{"2", "m"}], "a"]}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "m"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539242537208136*^9, 3.539242631599706*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NSolve", "::", "nsmet"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"This system cannot be solved with the methods available to \
+NSolve. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NSolve\\\", ButtonNote -> \
+\\\"NSolve::nsmet\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.539242635020326*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"16", " ", "a"}]], "\[Equal]", 
+      RowBox[{"Cot", "[", 
+       FractionBox["1", 
+        RowBox[{"32", " ", "m"}]], "]"}]}], ",", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", "a"}]], "\[Equal]", 
+      SqrtBox[
+       RowBox[{"1", "+", "2"}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "m"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539242886038182*^9, 3.53924288822918*^9}, {
+  3.539243025307267*^9, 3.539243031778115*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NSolve", "::", "ifun"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Inverse functions are being used by \[NoBreak]\\!\\(NSolve\
+\\)\[NoBreak], so some solutions may not be found; use Reduce for complete \
+solution information. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NSolve\\\", ButtonNote -> \\\"NSolve::ifun\\\"]\\)\
+\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.539242895602641*^9, {3.539243025788117*^9, 3.539243032156245*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"a", "\[Rule]", "0.28867513459481287`"}], ",", 
+    RowBox[{"m", "\[Rule]", "0.02301888742782879`"}]}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.5392428956038*^9, {3.539243025789944*^9, 3.539243032157788*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"16", " ", "a"}]], "\[Equal]", 
+    RowBox[{"Cot", "[", 
+     FractionBox["1", 
+      RowBox[{"32", " ", "m"}]], "]"}]}], ",", " ", "m"}], "]"}]], "Input",
+ CellChangeTimes->{{3.539243219026269*^9, 3.539243251609851*^9}, {
+  3.539243348670124*^9, 3.539243423487545*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NSolve", "::", "ifun"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Inverse functions are being used by \[NoBreak]\\!\\(NSolve\
+\\)\[NoBreak], so some solutions may not be found; use Reduce for complete \
+solution information. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NSolve\\\", ButtonNote -> \\\"NSolve::ifun\\\"]\\)\
+\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.539243239176832*^9, 3.539243252198108*^9}, 
+   3.539243351982121*^9, {3.539243393493402*^9, 3.539243423845505*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"m", "\[Rule]", 
+    FractionBox["0.03125`", 
+     RowBox[{"ArcCot", "[", 
+      FractionBox["0.0625`", "a"], "]"}]]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.539243239177848*^9, 3.539243252255562*^9}, 
+   3.539243351985111*^9, {3.539243393495339*^9, 3.539243423847225*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindRoot", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["0.03125`", 
+     RowBox[{"ArcCot", "[", 
+      FractionBox["0.0625`", "a"], "]"}]], "-", "a"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0.05"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539243483976601*^9, 3.539243582423424*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"a", "\[Rule]", "0.047836182916608294`"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.539243522408247*^9, {3.539243556395575*^9, 3.539243583045538*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"2", "a"}]], "\[Equal]", 
+    RowBox[{"Sqrt", "[", "3", "]"}]}], ",", "a"}], "]"}]], "Input",
+ CellChangeTimes->{{3.539243717352004*^9, 3.539243743586464*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"a", "\[Rule]", "0.28867513459481287`"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.539243739881022*^9, 3.539243744006182*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"16", "a"}]], "\[Equal]", 
+    RowBox[{"Cot", "[", 
+     FractionBox["1", 
+      RowBox[{"32", " ", "a"}]], "]"}]}], ",", "a"}], "]"}]], "Input",
+ CellChangeTimes->{{3.539243850725248*^9, 3.539243933236256*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Solve", "::", "nsmet"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"This system cannot be solved with the methods available to \
+Solve. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Solve\\\", ButtonNote -> \
+\\\"Solve::nsmet\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.539243874130209*^9, 3.539243933739099*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindRoot", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"16", " ", "a"}]], "\[Equal]", 
+    RowBox[{"Cot", "[", 
+     FractionBox["1", 
+      RowBox[{"32", " ", "a"}]], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0.25"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539244030596881*^9, 3.539244043370206*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"a", "\[Rule]", "0.047836182916611805`"}], "}"}]], "Output",
+ CellChangeTimes->{3.539244044463602*^9}]
+}, Open  ]],
+
+Cell[BoxData["FindRoot"], "Input",
+ CellChangeTimes->{{3.539244012351531*^9, 3.539244014638338*^9}}]
+},
+WindowSize->{740, 588},
+WindowMargins->{{111, Automatic}, {45, Automatic}},
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 142, 3, 54, "Input"],
+Cell[702, 25, 148, 3, 54, "Input"],
+Cell[CellGroupData[{
+Cell[875, 32, 616, 20, 76, "Input"],
+Cell[1494, 54, 434, 10, 24, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1965, 69, 601, 19, 54, InheritFromParent],
+Cell[2569, 90, 571, 12, 61, "Message"],
+Cell[3143, 104, 289, 8, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3469, 117, 367, 10, 54, "Input"],
+Cell[3839, 129, 618, 12, 61, "Message"],
+Cell[4460, 143, 338, 8, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4835, 156, 323, 9, 66, "Input"],
+Cell[5161, 167, 190, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5388, 176, 256, 7, 54, "Input"],
+Cell[5647, 185, 188, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5872, 194, 307, 9, 54, "Input"],
+Cell[6182, 205, 454, 10, 24, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6673, 220, 367, 11, 54, InheritFromParent],
+Cell[7043, 233, 141, 3, 30, "Output"]
+}, Open  ]],
+Cell[7199, 239, 100, 1, 30, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

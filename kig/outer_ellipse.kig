@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE KigDocument>
+<KigDocument axes="1" grid="1" CompatibilityVersion="0.7.0" Version="1.0">
+ <CoordinateSystem>Euclidean</CoordinateSystem>
+ <Hierarchy>
+  <Data type="double" id="1">0.0150972</Data>
+  <Data type="int" id="2">0</Data>
+  <Data type="string" id="3">%1</Data>
+  <Data type="int" id="4">0</Data>
+  <Data type="double" id="5">0.115417</Data>
+  <Data type="string" id="6">%1</Data>
+  <Data type="double" id="7">-0.249641</Data>
+  <Data type="double" id="8">0.125345</Data>
+  <Data type="double" id="9">0.490881</Data>
+  <Data type="double" id="10">0</Data>
+  <Data type="double" id="11">0.992157</Data>
+  <Object type="FixedPoint" id="12">
+   <Parent id="11"/>
+   <Parent id="10"/>
+  </Object>
+  <Data type="double" id="13">-0.992157</Data>
+  <Data type="double" id="14">0.48701</Data>
+  <Data type="double" id="15">0</Data>
+  <Object type="FixedPoint" id="16">
+   <Parent id="13"/>
+   <Parent id="15"/>
+  </Object>
+  <Data type="double" id="17">0.483446</Data>
+  <Data type="double" id="18">-0.125</Data>
+  <Data type="double" id="19">0</Data>
+  <Data type="double" id="20">0</Data>
+  <Data type="double" id="21">0</Data>
+  <Data type="double" id="22">-1</Data>
+  <Object type="FixedPoint" id="23">
+   <Parent id="22"/>
+   <Parent id="20"/>
+  </Object>
+  <Object type="EllipseBFFP" id="24">
+   <Parent id="12"/>
+   <Parent id="16"/>
+   <Parent id="23"/>
+  </Object>
+  <Object type="ConstrainedPoint" id="25">
+   <Parent id="17"/>
+   <Parent id="24"/>
+  </Object>
+  <Property which="coordinate-y" id="26">
+   <Parent id="25"/>
+  </Property>
+  <Property which="coordinate-x" id="27">
+   <Parent id="25"/>
+  </Property>
+  <Object type="ConstrainedPoint" id="28">
+   <Parent id="14"/>
+   <Parent id="24"/>
+  </Object>
+  <Object type="ConstrainedPoint" id="29">
+   <Parent id="9"/>
+   <Parent id="24"/>
+  </Object>
+  <Data type="double" id="30">0.125</Data>
+  <Data type="double" id="31">0</Data>
+  <Object type="FixedPoint" id="32">
+   <Parent id="21"/>
+   <Parent id="30"/>
+  </Object>
+  <Data type="double" id="33">1</Data>
+  <Object type="FixedPoint" id="34">
+   <Parent id="33"/>
+   <Parent id="31"/>
+  </Object>
+  <Data type="double" id="35">0</Data>
+  <Object type="FixedPoint" id="36">
+   <Parent id="35"/>
+   <Parent id="19"/>
+  </Object>
+  <Data type="double" id="37">0</Data>
+  <Object type="FixedPoint" id="38">
+   <Parent id="37"/>
+   <Parent id="18"/>
+  </Object>
+  <Object type="RelativePoint" id="39">
+   <Parent id="7"/>
+   <Parent id="5"/>
+   <Parent id="25"/>
+  </Object>
+  <Object type="Label" id="40">
+   <Parent id="4"/>
+   <Parent id="39"/>
+   <Parent id="6"/>
+   <Parent id="27"/>
+  </Object>
+  <Object type="RelativePoint" id="41">
+   <Parent id="1"/>
+   <Parent id="8"/>
+   <Parent id="25"/>
+  </Object>
+  <Object type="Label" id="42">
+   <Parent id="2"/>
+   <Parent id="41"/>
+   <Parent id="3"/>
+   <Parent id="26"/>
+  </Object>
+ </Hierarchy>
+ <View>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="12"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="28"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="36"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="25"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="32"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="23"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="29"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="34"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="38"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="24"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="16"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="42"/>
+  <Draw width="-1" namecalcer="none" point-style="Round" shown="true" style="SolidLine" color="#0000ff" font="Ubuntu,9,-1,5,50,0,0,0,0,0" object="40"/>
+ </View>
+</KigDocument>

@@ -1,0 +1,2 @@
+OBJECTS = \
+$(OBJECTS_DIR)/my_pimpleFoam.o
