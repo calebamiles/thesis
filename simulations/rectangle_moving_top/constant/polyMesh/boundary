@@ -20,32 +20,32 @@ FoamFile
     wing
     {
         type            wall;
-        nFaces          50;
-        startFace       10920;
+        nFaces          100;
+        startFace       44040;
     }
     inlet
     {
         type            wall;
-        nFaces          60;
-        startFace       10970;
+        nFaces          120;
+        startFace       44140;
     }
     outlet
     {
         type            wall;
-        nFaces          60;
-        startFace       11030;
+        nFaces          120;
+        startFace       44260;
     }
     topAndBottom
     {
         type            wall;
-        nFaces          190;
-        startFace       11090;
+        nFaces          380;
+        startFace       44380;
     }
     frontAndBack
     {
         type            empty;
-        nFaces          11100;
-        startFace       11280;
+        nFaces          44400;
+        startFace       44760;
     }
 )
 
