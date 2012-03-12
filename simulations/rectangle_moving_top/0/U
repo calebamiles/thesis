@@ -40,13 +40,22 @@ inlet
 	}
 
 
-
+	/*
+	// Comment to test free stream conditions
 	outlet
 	{
 		type				inletOutlet;
 		inletValue		uniform (0 0 0);
 		value				$internalField;
 	}
+	*/
+	outlet
+	{
+		type            groovyBC;
+		valueExpression "vector(1,0,0) - (2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
+		value uniform (1 0 0);  
+	}
+
 
 	wing
 	{
