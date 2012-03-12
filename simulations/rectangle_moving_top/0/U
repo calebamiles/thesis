@@ -57,7 +57,7 @@ inlet
 	topAndBottom
 	{
 		type            groovyBC;
-		valueExpression "-(2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
+		valueExpression "vector(1,0,0) -(2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
 		value uniform (1 0 0);  
 	}
 
