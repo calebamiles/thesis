@@ -32,7 +32,7 @@ boundaryField
 		value           $internalField;
 	}
 
-	ellipse
+	wing
 	{
 		type            zeroGradient;
 	}

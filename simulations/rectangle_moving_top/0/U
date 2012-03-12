@@ -48,7 +48,7 @@ inlet
 		value				$internalField;
 	}
 
-	ellipse
+	wing
 	{
 		type				fixedValue;
 		value				uniform (0 0 0);

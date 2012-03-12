@@ -32,7 +32,7 @@ boundaryField
 		//value		uniform 0;
 	}
 
-	ellipse
+	wing
 	{
 		type            zeroGradient;
 	}

@@ -57,7 +57,7 @@ functions
 		functionObjectLibs ( "libforces.so" );
 		outputControl timeStep;
 		outputInterval 1;
-		patches		("ellipse");		
+		patches		("wing");		
 		pName       p;
 		UName       U;
 		rhoName		rhoInf;
