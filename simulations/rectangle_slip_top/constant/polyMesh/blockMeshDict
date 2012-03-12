@@ -19,46 +19,46 @@ convertToMeters 1;
 vertices
 (
 	// Verticies for outer mesh
-	(-6.0 -5.1250 0.000) // Vertex 0
-	(-6.0 -0.1250 0.000) // Vertex 1
-	(-6.0 -0.0625 0.000) // Vertex 2
-	(-6.0  0.0625 0.000) // Vertex 3
-	(-6.0  0.1250 0.000) // Vertex 4
-	(-6.0  5.1250 0.000) // Vertex 5
-	(-1.0  5.1250 0.000) // Vertex 6
-	(-0.5  5.1250 0.000) // Vertex 7
-	( 0.5  5.1250 0.000) // Vertex 8
-	( 1.0  5.1250 0.000) // Vertex 9
-	(11.0  5.1250 0.000) // Vertex 10
-	(11.0  0.1250 0.000) // Vertex 11
-	(11.0  0.0625 0.000) // Vertex 12
-	(11.0 -0.0625 0.000) // Vertex 13
-	(11.0 -0.1250 0.000) // Vertex 14
-	(11.0 -5.1250 0.000) // Vertex 15
-	( 1.0 -5.1250 0.000) // Vertex 16
-	( 0.5 -5.1250 0.000) // Vertex 17
-	(-0.5 -5.1250 0.000) // Vertex 18
-	(-1.0 -5.1250 0.000) // Vertex 19
-	(-6.0 -5.1250 0.500) // Vertex 20
-	(-6.0 -0.1250 0.500) // Vertex 21
-	(-6.0 -0.0625 0.500) // Vertex 22
-	(-6.0  0.0625 0.500) // Vertex 23
-	(-6.0  0.1250 0.500) // Vertex 24
-	(-6.0  5.1250 0.500) // Vertex 25
-	(-1.0  5.1250 0.500) // Vertex 26 
-	(-0.5  5.1250 0.500) // Vertex 27
-	( 0.5  5.1250 0.500) // Vertex 28
-	( 1.0  5.1250 0.500) // Vertex 29
-	(11.0  5.1250 0.500) // Vertex 30
-	(11.0  0.1250 0.500) // Vertex 31
-	(11.0  0.0625 0.500) // Vertex 32
-	(11.0 -0.0625 0.500) // Vertex 33
-	(11.0 -0.1250 0.500) // Vertex 34
-	(11.0 -5.1250 0.500) // Vertex 35
-	( 1.0 -5.1250 0.500) // Vertex 36
-	( 0.5 -5.1250 0.500) // Vertex 37
-	(-0.5 -5.1250 0.500) // Vertex 38
-	(-1.0 -5.1250 0.500) // Vertex 39
+	(-10.0 -10.1250 0.000) // Vertex 0
+	(-10.0 -0.1250 0.000) // Vertex 1
+	(-10.0 -0.0625 0.000) // Vertex 2
+	(-10.0  0.0625 0.000) // Vertex 3
+	(-10.0  0.1250 0.000) // Vertex 4
+	(-10.0 10.1250 0.000) // Vertex 5
+	(-1.0  10.1250 0.000) // Vertex 6
+	(-0.5  10.1250 0.000) // Vertex 7
+	( 0.5  10.1250 0.000) // Vertex 8
+	( 1.0  10.1250 0.000) // Vertex 9
+	(40.0  10.1250 0.000) // Vertex 10
+	(40.0  0.1250 0.000) // Vertex 11
+	(40.0  0.0625 0.000) // Vertex 12
+	(40.0 -0.0625 0.000) // Vertex 13
+	(40.0 -0.1250 0.000) // Vertex 14
+	(40.0 -10.1250 0.000) // Vertex 15
+	( 1.0 -10.1250 0.000) // Vertex 16
+	( 0.5 -10.1250 0.000) // Vertex 17
+	(-0.5 -10.1250 0.000) // Vertex 18
+	(-1.0 -10.1250 0.000) // Vertex 19
+	(-10.0 -10.1250 0.500) // Vertex 20
+	(-10.0 -0.1250 0.500) // Vertex 21
+	(-10.0 -0.0625 0.500) // Vertex 22
+	(-10.0  0.0625 0.500) // Vertex 23
+	(-10.0  0.1250 0.500) // Vertex 24
+	(-10.0  10.1250 0.500) // Vertex 25
+	(-1.0  10.1250 0.500) // Vertex 26 
+	(-0.5  10.1250 0.500) // Vertex 27
+	( 0.5  10.1250 0.500) // Vertex 28
+	( 1.0  10.1250 0.500) // Vertex 29
+	(40.0  10.1250 0.500) // Vertex 30
+	(40.0  0.1250 0.500) // Vertex 31
+	(40.0  0.0625 0.500) // Vertex 32
+	(40.0 -0.0625 0.500) // Vertex 33
+	(40.0 -0.1250 0.500) // Vertex 34
+	(40.0 -10.1250 0.500) // Vertex 35
+	( 1.0 -10.1250 0.500) // Vertex 36
+	( 0.5 -10.1250 0.500) // Vertex 37
+	(-0.5 -10.1250 0.500) // Vertex 38
+	(-1.0 -10.1250 0.500) // Vertex 39
 	
 	//Verticies for rectangular wing boundary
 	(-1.0 -0.1250 0.000) // Vertex 40
@@ -104,30 +104,30 @@ vertices
 blocks
 (
 	// Blocks for outer mesh
-	hex ( 0 20 39 19  1 21 52 40) (1 40 40) simpleGrading (1 1 1) // Block 0
-	hex ( 1 21 52 40  2 22 53 41) (1 40 10) simpleGrading (1 1 1) // Block 1
-	hex ( 2 22 53 41  3 23 54 42) (1 40 20) simpleGrading (1 1 1) // Block 2
-	hex ( 3 23 54 42  4 24 55 43) (1 40 10) simpleGrading (1 1 1) // Block 3
-	hex ( 4 24 55 43  5 25 26  6) (1 40 40) simpleGrading (1 1 1) // Block 4
-	hex (19 39 38 18 40 52 63 51) (1 20 40) simpleGrading (1 1 1) // Block 5
-	hex (40 52 63 51 41 53 68 64) (1 20 10) simpleGrading (1 1 1) // Block 6
-	hex (41 53 68 64 42 54 69 65) (1 20 20) simpleGrading (1 1 1) // Block 7
-	hex (42 54 69 65 43 55 56 44) (1 20 10) simpleGrading (1 1 1) // Block 8
-	hex (43 55 56 44  6 26 27  7) (1 20 40) simpleGrading (1 1 1) // Block 9
-	hex (18 38 37 17 51 63 62 50) (1 30 40) simpleGrading (1 1 1) // Block 10
-	hex (51 63 62 50 64 68 71 67) (1 30 10) simpleGrading (1 1 1) // Block 11
-	hex (65 69 70 66 44 56 57 45) (1 30 10) simpleGrading (1 1 1) // Block 12
-	hex (44 56 57 45  7 27 28  8) (1 30 40) simpleGrading (1 1 1) // Block 13
-	hex (17 37 36 16 50 62 61 49) (1 20 40) simpleGrading (1 1 1) // Block 14
-	hex (50 62 61 49 67 71 60 48) (1 20 10) simpleGrading (1 1 1) // Block 15
-	hex (67 71 60 48 66 70 59 47) (1 20 20) simpleGrading (1 1 1) // Block 16
-	hex (66 70 59 47 45 57 58 46) (1 20 10) simpleGrading (1 1 1) // Block 17
-	hex (45 57 58 46  8 28 29  9) (1 20 40) simpleGrading (1 1 1) // Block 18
-	hex (16 36 35 15 49 61 34 14) (1 80 40) simpleGrading (1 1 1) // Block 19
-	hex (49 61 34 14 48 60 33 13) (1 80 10) simpleGrading (1 1 1) // Block 20
-	hex (48 60 33 13 47 59 32 12) (1 80 20) simpleGrading (1 1 1) // Block 21
-	hex (47 59 32 12 46 58 31 11) (1 80 10) simpleGrading (1 1 1) // Block 22
-	hex (46 58 31 11  9 29 30 10) (1 80 40) simpleGrading (1 1 1) // Block 23
+	hex ( 0 20 39 19  1 21 52 40) (1 80 80) simpleGrading (1 1 1) // Block 0
+	hex ( 1 21 52 40  2 22 53 41) (1 80 20) simpleGrading (1 1 1) // Block 1
+	hex ( 2 22 53 41  3 23 54 42) (1 80 40) simpleGrading (1 1 1) // Block 2
+	hex ( 3 23 54 42  4 24 55 43) (1 80 20) simpleGrading (1 1 1) // Block 3
+	hex ( 4 24 55 43  5 25 26  6) (1 80 80) simpleGrading (1 1 1) // Block 4
+	hex (19 39 38 18 40 52 63 51) (1 40 80) simpleGrading (1 1 1) // Block 5
+	hex (40 52 63 51 41 53 68 64) (1 40 20) simpleGrading (1 1 1) // Block 6
+	hex (41 53 68 64 42 54 69 65) (1 40 40) simpleGrading (1 1 1) // Block 7
+	hex (42 54 69 65 43 55 56 44) (1 40 20) simpleGrading (1 1 1) // Block 8
+	hex (43 55 56 44  6 26 27  7) (1 40 80) simpleGrading (1 1 1) // Block 9
+	hex (18 38 37 17 51 63 62 50) (1 60 80) simpleGrading (1 1 1) // Block 10
+	hex (51 63 62 50 64 68 71 67) (1 60 20) simpleGrading (1 1 1) // Block 11
+	hex (65 69 70 66 44 56 57 45) (1 60 20) simpleGrading (1 1 1) // Block 12
+	hex (44 56 57 45  7 27 28  8) (1 60 80) simpleGrading (1 1 1) // Block 13
+	hex (17 37 36 16 50 62 61 49) (1 40 80) simpleGrading (1 1 1) // Block 14
+	hex (50 62 61 49 67 71 60 48) (1 40 20) simpleGrading (1 1 1) // Block 15
+	hex (67 71 60 48 66 70 59 47) (1 40 40) simpleGrading (1 1 1) // Block 16
+	hex (66 70 59 47 45 57 58 46) (1 40 20) simpleGrading (1 1 1) // Block 17
+	hex (45 57 58 46  8 28 29  9) (1 40 80) simpleGrading (1 1 1) // Block 18
+	hex (16 36 35 15 49 61 34 14) (1 160 80) simpleGrading (1 1 1) // Block 19
+	hex (49 61 34 14 48 60 33 13) (1 160 20) simpleGrading (1 1 1) // Block 20
+	hex (48 60 33 13 47 59 32 12) (1 160 40) simpleGrading (1 1 1) // Block 21
+	hex (47 59 32 12 46 58 31 11) (1 160 20) simpleGrading (1 1 1) // Block 22
+	hex (46 58 31 11  9 29 30 10) (1 160 80) simpleGrading (1 1 1) // Block 23
 
 	
 
