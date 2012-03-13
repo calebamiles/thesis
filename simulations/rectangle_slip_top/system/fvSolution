@@ -36,8 +36,8 @@ solvers
 
 PISO
 {
-    nCorrectors     10;
-    nNonOrthogonalCorrectors 15;
+    nCorrectors     30;
+    nNonOrthogonalCorrectors 0;
 }
 
 
