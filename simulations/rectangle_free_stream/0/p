@@ -9,54 +9,36 @@ FoamFile
 {
 	version     2.0;
 	format      ascii;
-	class       volVectorField;
-	object      U;
+	class       volScalarField;
+	object      p;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform (0 0 0);
+internalField   uniform 0;
 
 boundaryField
 {
-
-/*
-// Commented out for testing
-inlet
+	inlet
 	{
-		type				fixedValue;
-		value				uniform (1 0 0);
+		type            zeroGradient;
 	}
-
-*/
-
-
-inlet
-	{
-		type            groovyBC;
-		valueExpression "vector(1,0,0) - (2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
-		value uniform (1 0 0);  
-	}
-
-
 
 	outlet
 	{
-		type				inletOutlet;
-		inletValue		uniform (0 0 0);
-		value				$internalField;
+		type          zeroGradient;//fixedValue;
+		//value		uniform 0;
 	}
 
 	wing
 	{
-		type				fixedValue;
-		value				uniform (0 0 0);
+		type            zeroGradient;
 	}
 
 	topAndBottom
 	{
-		type				slip;
+		type            slip;
 	}
 
 	frontAndBack

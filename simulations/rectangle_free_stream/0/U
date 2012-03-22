@@ -16,7 +16,7 @@ FoamFile
 
 dimensions      [0 1 -1 0 0 0 0];
 
-internalField   uniform (0 0 0);
+internalField   uniform (1 0 0);
 
 boundaryField
 {
@@ -43,9 +43,9 @@ inlet
 
 	outlet
 	{
-		type				inletOutlet;
-		inletValue		uniform (0 0 0);
-		value				$internalField;
+		type            groovyBC;
+		valueExpression "vector(1,0,0) - (2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
+		value uniform (1 0 0);  
 	}
 
 	wing

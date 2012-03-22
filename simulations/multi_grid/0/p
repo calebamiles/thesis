@@ -28,11 +28,11 @@ boundaryField
 	outlet
 	{
 		type            fixedValue;
-		//value           $internalField;
-		value		uniform 0;
+		value           $internalField;
+		//value		uniform 0;
 	}
 
-	ellipse
+	wing
 	{
 		type            zeroGradient;
 	}

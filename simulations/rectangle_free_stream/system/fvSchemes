@@ -7,67 +7,55 @@
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
-	version     2.0;
-	format      ascii;
-	class       volVectorField;
-	object      U;
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
-
-internalField   uniform (0 0 0);
-
-boundaryField
+ddtSchemes
 {
-
-/*
-// Commented out for testing
-inlet
-	{
-		type				fixedValue;
-		value				uniform (1 0 0);
-	}
-
-*/
-
-
-inlet
-	{
-		type            groovyBC;
-		valueExpression "vector(1,0,0) - (2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
-		value uniform (1 0 0);  
-	}
-
-
-
-	outlet
-	{
-		type				inletOutlet;
-		inletValue		uniform (0 0 0);
-		value				$internalField;
-	}
-
-	wing
-	{
-		type				fixedValue;
-		value				uniform (0 0 0);
-	}
-
-	topAndBottom
-	{
-		type				slip;
-	}
-
-	frontAndBack
-	{
-		type            empty;
-	}
-
-	defaultFaces
-	{
-		type            empty;
-	}
+    default         CrankNicholson 1;
 }
+
+gradSchemes
+{
+    default         Gauss linear;
+    grad(p)         Gauss linear;
+}
+
+divSchemes
+{
+    default         none;
+	//div(phi,U)      Gauss cubic corrected;    
+    div(phi,U)      Gauss limitedLinearV 1;
+}
+
+laplacianSchemes
+{
+    default         none;
+    laplacian(nu,U) Gauss linear corrected;
+    laplacian((1|A(U)),p) Gauss linear corrected;
+}
+
+interpolationSchemes
+{
+    default         linear;
+    interpolate(HbyA) linear;
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+
+fluxRequired
+{
+    default         no;
+    p               ;
+}
+
 
 // ************************************************************************* //

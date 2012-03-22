@@ -7,67 +7,47 @@
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
-	version     2.0;
-	format      ascii;
-	class       volVectorField;
-	object      U;
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+solvers
+{
+    p
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-06;
+        relTol          0;
+    }
 
-internalField   uniform (0 0 0);
+    U
+    {
+        solver          PBiCG;
+        preconditioner  DILU;
+        tolerance       1e-06;
+        relTol          0;
+    }
+}
 
-boundaryField
+PISO
+{
+    nCorrectors     10;
+    nNonOrthogonalCorrectors 0;
+
+	pRefCell 0;
+	pRefValue 0;
+}
+
+potentialFlow
 {
 
-/*
-// Commented out for testing
-inlet
-	{
-		type				fixedValue;
-		value				uniform (1 0 0);
-	}
-
-*/
-
-
-inlet
-	{
-		type            groovyBC;
-		valueExpression "vector(1,0,0) - (2*pi*0.16*sin(2*pi*1.0*time()))*vector(0,1,0)";
-		value uniform (1 0 0);  
-	}
-
-
-
-	outlet
-	{
-		type				inletOutlet;
-		inletValue		uniform (0 0 0);
-		value				$internalField;
-	}
-
-	wing
-	{
-		type				fixedValue;
-		value				uniform (0 0 0);
-	}
-
-	topAndBottom
-	{
-		type				slip;
-	}
-
-	frontAndBack
-	{
-		type            empty;
-	}
-
-	defaultFaces
-	{
-		type            empty;
-	}
+	pRefCell 0;
+	pRefValue 0;
 }
 
 // ************************************************************************* //

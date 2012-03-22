@@ -91,7 +91,7 @@ PIMPLE
 PISO
 {
     nCorrectors     10;
-    nNonOrthogonalCorrectors 15;
+    nNonOrthogonalCorrectors 0;
 }
 
 /*
