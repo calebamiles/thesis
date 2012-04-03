@@ -31,9 +31,11 @@ writeControl    adjustableRunTime;
 
 writeInterval   0.1;
 
-maxCo           0.1;
+maxCo           0.8;
 
-maxDeltaT       1;
+maxDeltaT       0.01;
+
+adjustTimeStep  on;
 
 /*
 // Commented out to test adjustable time step
@@ -48,13 +50,13 @@ writeFormat     ascii;
 
 writePrecision  6;
 
-writeCompression on;
+writeCompression uncompressed;
 
 timeFormat      general;
 
 timePrecision   6;
 
-runTimeModifiable true;
+runTimeModifiable yes;
 
 
 functions
