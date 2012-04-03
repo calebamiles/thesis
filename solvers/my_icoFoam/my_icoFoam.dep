@@ -582,7 +582,6 @@ my_icoFoam.dep: $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/IFstream.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/setRootCase.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/createTime.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/OpenFOAM/lnInclude/createMesh.H
-my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/readPISOControls.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/initContinuityErrs.H
 my_icoFoam.dep: createFields.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/createPhi.H
@@ -590,6 +589,7 @@ my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/readTimeControls.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/CourantNo.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/setInitialDeltaT.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/equationReader/lnInclude/createEquationReader.H
+my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/readPISOControls.H
 my_icoFoam.dep: setDeltaT.H
 my_icoFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/continuityErrs.H
 $(OBJECTS_DIR)/my_icoFoam.o: $(EXE_DEP)
